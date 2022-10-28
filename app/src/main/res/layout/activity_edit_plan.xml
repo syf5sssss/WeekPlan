@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edit_background"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/edit_plan_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40sp"
+        android:text="修改计划"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/edit_plan_linear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/edit_plan_title"
+        android:background="@drawable/edit_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="计划周数:"
+            android:textColor="#000000"
+            android:textSize="19sp" />
+        <TextView
+            android:id="@+id/edit_plan_week_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="26/52"
+            android:textColor="#000000"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_plan_data"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_background"
+        android:text="  1.世界和平\n  2.西天取经\n  3.长生不老"
+        android:textAllCaps="false"
+        android:inputType="textMultiLine"
+        android:scrollbars="horizontal|vertical"
+        android:fadeScrollbars="false"
+        android:layout_below="@+id/edit_plan_linear"
+        android:textColor="@color/black"
+        android:textSize="40px" />
+
+    <Button
+        android:id="@+id/edit_submit_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40sp"
+        android:layout_marginLeft="30dp"
+        android:text="提交"
+        android:layout_below="@+id/edit_plan_data"
+        android:textColor="@color/black"
+        android:background="@color/color6"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/del_submit_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:text="删除"
+        android:layout_below="@+id/edit_plan_data"
+        android:textColor="@color/black"
+        android:background="@color/color6"
+        android:textSize="20sp" />
+
+</RelativeLayout>

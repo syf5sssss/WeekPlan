@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edit_background"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/edit_project_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:layout_marginTop="40sp"
+        android:text="修改项目"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    <!--  用户名  -->
+    <LinearLayout
+        android:id="@+id/edit_project_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/edit_project_title"
+        android:background="@drawable/edit_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center_horizontal"
+            android:text="项目名称:"
+            android:textColor="#000000"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textColor="#000000"
+            android:textAllCaps="false"
+            android:text="XXXXX"
+            android:hint="请输入项目名"
+            android:textColorHighlight="@color/black"
+            android:textColorHint="#2E2B2B"
+            android:layout_weight="4" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/edit_submit_project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40sp"
+        android:text="提交"
+        android:layout_below="@+id/edit_project_linear"
+        android:textColor="@color/black"
+        android:background="@color/color6"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp" />
+    <Button
+        android:id="@+id/del_submit_project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40sp"
+        android:text="删除"
+        android:layout_below="@+id/edit_project_linear"
+        android:textColor="@color/black"
+        android:background="@color/color6"
+        android:textSize="20sp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

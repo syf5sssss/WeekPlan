@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edit_background"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40sp"
+        android:text="添加计划"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="计划周数:"
+            android:textColor="#000000"
+            android:textSize="19sp" />
+        <TextView
+            android:id="@+id/add_plan_week_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="26/52"
+            android:textColor="#000000"
+            android:textSize="19sp" />
+
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:background="@drawable/edit_background"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1.5"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:text="计划名称:"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="19sp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/etName"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColorHint="@color/black"-->
+<!--            android:text="XXXXX"-->
+<!--            android:hint="请输入计划名"-->
+<!--            android:layout_weight="4"-->
+<!--            android:gravity="center_horizontal" />-->
+
+<!--    </LinearLayout>-->
+
+    <EditText
+        android:id="@+id/add_plan_data"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_background"
+        android:text="  1.世界和平\n  2.西天取经\n  3.长生不老"
+        android:textAllCaps="false"
+        android:inputType="textMultiLine"
+        android:scrollbars="horizontal|vertical"
+        android:fadeScrollbars="false"
+        android:textColor="@color/black"
+        android:textSize="40px" />
+
+    <Button
+        android:id="@+id/submit_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40sp"
+        android:text="提交"
+        android:textColor="@color/black"
+        android:background="@color/color6"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/text_setting_title"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="设置"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/text_sync_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/text_setting_title"
+        android:text=" 同步 "
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp" />
+    <Button
+        android:id="@+id/button_sync_data"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/text_sync_view"
+        android:background="@color/color6"
+        android:text=" 同步数据 "
+        android:layout_marginStart="80dp" />
+
+    <TextView
+        android:id="@+id/text_export_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text=" 导出 "
+        android:layout_below="@+id/button_sync_data"
+        android:layout_alignLeft="@+id/text_sync_view"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_alignStart="@+id/text_sync_view" />
+
+    <Button
+        android:id="@+id/export_excel"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="15sp"
+        android:layout_marginTop="80dp"
+        android:background="@color/color6"
+        android:layout_below="@+id/button_sync_data"
+        android:layout_alignLeft="@+id/button_sync_data"
+        android:text=" 导出表格 "
+        android:layout_alignStart="@+id/button_sync_data" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/text_export_year"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:text=" 导出整年 "-->
+<!--        android:layout_below="@+id/export_excel"-->
+<!--        android:layout_alignLeft="@+id/text_sync_view"-->
+<!--        android:textSize="15sp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_alignStart="@+id/text_sync_view" />-->
+
+<!--    <com.work.Dto.QNumberPicker-->
+<!--        android:id="@+id/year_picker"-->
+<!--        android:layout_width="45dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_below="@+id/text_export_year"-->
+<!--        android:layout_alignLeft="@+id/text_export_view"-->
+<!--        android:background="@color/white"-->
+<!--        android:layout_alignStart="@+id/text_export_view" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/export_year_excel_button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:textSize="15sp"-->
+<!--        android:layout_marginTop="90dp"-->
+<!--        android:background="@color/color6"-->
+<!--        android:layout_below="@+id/export_excel"-->
+<!--        android:layout_alignLeft="@+id/button_sync_data"-->
+<!--        android:text=" 整年记录 "-->
+<!--        android:layout_alignStart="@+id/button_sync_data" />-->
+
+
+    <TextView
+        android:id="@+id/text_version_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="版本"
+        android:textSize="15sp"
+        android:layout_alignLeft="@+id/year_picker"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_alignBottom="@+id/text_version_view"
+        android:layout_alignLeft="@+id/export_excel"
+        android:text=" V2.5.8 "
+        android:gravity="center_vertical" />
+
+</RelativeLayout>

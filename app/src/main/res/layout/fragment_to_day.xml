@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".ToDayFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/text_show_week"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="周一  26/52"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/last_week"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/color6"
+        android:padding="0dp"
+        android:text="上一天"
+        android:layout_toLeftOf="@+id/text_show_week"
+        android:layout_alignBottom="@+id/text_show_week"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:layout_toStartOf="@+id/text_show_week"
+        android:layout_marginEnd="40dp" />
+    <Button
+        android:id="@+id/next_day"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/color6"
+        android:padding="0dp"
+        android:text="下一天"
+        android:layout_alignBottom="@+id/text_show_week"
+        android:layout_toRightOf="@+id/text_show_week"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:layout_toEndOf="@+id/text_show_week"
+        android:layout_marginStart="40dp" />
+
+    <TextView
+        android:id="@+id/text_days"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="2021-11-16 项目名称"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edit_plan_data"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:text="  1.世界和平\n  2.西天取经\n  3.长生不老"
+        android:layout_marginTop="75dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:background="@drawable/edit_background"
+        android:textAllCaps="false" />
+
+    <View
+        android:id="@+id/center_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_centerVertical="true"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/text_current"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="实际内容"
+        android:textColor="@color/black"
+        android:layout_below="@+id/center_line"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edit_current_data"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:text="  1.世界和平\n  2.西天取经\n  3.长生不老"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/center_line"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:background="@drawable/edit_background"
+        android:textColor="@color/black"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:id="@+id/clear_button"
+        android:text="清空"
+        android:layout_marginBottom="20dp"
+        android:layout_toLeftOf="@+id/text_show_week"
+        android:layout_marginRight="40dp"
+        android:background="@color/color6"
+        android:layout_below="@+id/edit_current_data"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:padding="0dp"
+        android:layout_toStartOf="@+id/text_show_week"
+        android:layout_marginEnd="40dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:id="@+id/save_button"
+        android:text="保存"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/text_show_week"
+        android:background="@color/color6"
+        android:layout_below="@+id/edit_current_data"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:padding="0dp"
+        android:layout_toEndOf="@+id/text_show_week"
+        android:layout_marginStart="40dp" />
+
+</RelativeLayout>
